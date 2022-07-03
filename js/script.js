@@ -44,7 +44,5 @@ function update() {
     next.disabled = false;
   }
 
-  let width = 0.33 * (actives.length - 1);
-  progress.style.width = width * 100 + "%";
-
+  progress.style.width = ((actives.length - 1) / (circles.length - 1)) * 100 + "%";
 }
